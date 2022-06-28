@@ -20,3 +20,4 @@ Array.from(linksCollections).forEach(function(element){
     console.log(element)
   }
 })
+
