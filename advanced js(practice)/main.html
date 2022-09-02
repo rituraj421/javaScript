@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaAcript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div>
+            <h1> JS START</h1>
+            <pre>
+                <b>
+                    To access an HTML element, JavaScript can use the document.getElementById(id) method.
+    
+                    The id attribute defines the HTML element. The innerHTML property defines the HTML content:
+    
+                    <button type="button" onclick="document.write(1 + 2)">Try it</button>
+    
+                    <button type="button" onclick="console.log(1 + 2)">Try again</button>
+    
+                    <button onclick="window.print()">Print this page</button> <!-- it will print currrent html page-->
+    
+                    <button type="button" onclick="console.log(z)"> return z</button>
+                </b>
+            </pre>
+        </div>
+    
+        <h1>JS KEYWORDS</h1>
+        <pre>
+            <mark>Keyword</mark> <b>Description</b>	
+            <mark>var</mark>	    ::Declares a variable
+            <mark>let</mark>	    ::Declares a block variable
+            <mark>const</mark>	    ::Declares a block constant
+            <mark>if</mark>	        ::Marks a block of statements to be executed on a condition
+            <mark>switch</mark>	    ::Marks a block of statements to be executed in different cases
+            <mark>for</mark>        ::Marks a block of statements to be executed in a loop
+            <mark>function</mark>   ::Declares a function
+            <mark>return</mark>	    ::Exits a function
+            <mark>try</mark>        ::Implements error handling to a block of statements
+        </pre>
+        <h1>JS VARIABLES</h1>    
+        <pre>
+            Variables defined with let cannot be redeclared.
+            ex:
+            let x= 4; and let x=3 not possible
+    
+            but with var it is possible , 
+    
+            var x = ritu;
+            var x = raj
+    
+            Variables declared with the var keyword can NOT have block scope.
+    
+            Variables declared inside a { } block can be accessed from outside the block.
+    
+            Variables defined with const cannot be Redeclared.
+    
+            Variables defined with const have Block Scope.
+        </pre>
+        <h1>JS OPERATORS</h1>
+        <pre>
+            <h3> js arithmatic operators</h3>
+            <b>Operator	               Description</b>
+            <mark>-</mark>	           Subtraction
+            <mark>+</mark>	           Addition
+            <mark>*</mark>             Multiplication
+            <mark>**</mark>	           Exponentiation (ES2016)
+            <mark>/</mark>	           Division
+            <mark>%</mark>	           Modulus (Division Remainder)
+            <mark>++</mark>	           Increment
+            <mark>--</mark>	           Decrement
+    
+            <h3> js arithmatic operators</h3>
+            Operator	  Example	    Same As
+                =	      x = y	        x = y
+                +=	      x += y	    x = x + y
+                -=	      x -= y	    x = x - y
+                *=	      x *= y	    x = x * y
+                /=	      x /= y	    x = x / y
+                %=	      x %= y	    x = x % y
+                **=	      x **= y	    x = x ** y
+
+            <h3>js comparison operator</h3>
+            Operator	        Description
+            ==	                equal to
+            ===	                equal value and equal type
+            !=	                not equal
+            !==	                not equal value or not equal type
+            >	                greater than
+            <	                less than
+            >=	                greater than or equal to
+            <=	                less than or equal to
+            ?	                ternary operator
+
+            <h3>js logical operator</h3>
+            Operator	       Description
+            &&	               logical and
+            ||	               logical or
+            !	               logical not
+        </pre>
+        <h1>JS DATA TYPES</h1>
+        <pre>
+            <p>
+                JavaScript variables can hold different data types: numbers, strings, objects and more:
+
+                When adding a number and a string, JavaScript will treat the number as a string.
+            </p>
+        </pre>
+        <h1>JS FUNCTIONS</h1>
+        <pre>
+            <p>
+                A JavaScript function is executed when "something" invokes it (calls it). 
+                
+                A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+            </p>
+        </pre>
+        <h1>JS OBJECTS</h1>
+        <pre>
+            <p>
+                Objects are variables too. But objects can contain many values
+                JavaScript objects are containers for named values called properties.
+                The this Keyword
+                In a function definition, this refers to the "owner" of the function.
+            </p>
+        </pre>
+        <h1>JS EVENTS</h1>
+        <pre>
+            <p id="ritu">
+                When JavaScript is used in HTML pages, JavaScript can "react" on these events.
+                <button onclick="this.innerHTML = Date()">The time is?</button>
+                <button onclick="displayDate()">The time is?</button>
+
+
+                Event	           Description
+                onchange	:     :An HTML element has been changed
+                onclick	    :     :The user clicks an HTML element
+                onmouseover	:     :The user moves the mouse over an HTML element
+                onmouseout	:     :The user moves the mouse away from an HTML element
+                onkeydown	:     :The user pushes a keyboard key
+                onload	    :     :The browser has finished loading the page
+
+                <button onclick="alert('Hello')">Click me.</button>
+                <button onclick="displayDate()">Click me.</button>
+                <div onmouseover="this.style.backgroundColor='black'">myDIV.</div>
+            </p>
+        </pre>
+        <h1>JS STRINGS</h1>
+        <pre>
+            Comparing two JavaScript objects always returns false.
+
+            here are 3 methods for extracting a part of a string:
+
+                slice(start, end)
+                substring(start, end)
+                substr(start, length)
+
+            substring() is similar to slice().
+
+            The difference is that start and end values less than 0 are treated as 0 in substring().
+
+            substr() is similar to slice().
+
+            The difference is that the second parameter specifies the length of the extracted part.
+            If you omit the second parameter, substr() will slice out the rest of the string.
+
+            The replace() method replaces only the first match
+
+            A string is converted to upper case with toUpperCase():
+
+            A string is converted to lower case with toLowerCase():
+
+            concat() joins two or more strings:
+
+            The trim() method removes whitespace from both sides of a string:
+
+            avaScript Search Methods
+                String indexOf()
+                String lastIndexOf()
+                String startsWith()
+                String endsWith()
+
+            Template Literals use back-ticks (``) rather than the quotes ("") to define a string:
+        </pre>
+        <h1>JS ARRAYS</h1>
+        <pre>
+            An array is a special variable, which can hold more than one value:
+
+            It is a common practice to declare arrays with the const keyword.
+
+            Array indexes start with 0.
+
+            [0] is the first element. [1] is the second element
+
+            Popping items out of an array, or pushing items into an array.
+
+            pop() method removes the last element from an array:
+
+            The push() method adds a new element to an array (at the end):
+
+            The sort() method sorts an array alphabetically:
+        </pre>
+    </section>
+    <script src="first.js"></script>
+</body>
+</html>
