@@ -261,3 +261,182 @@ const fruuits = ["Banana", "Orange", "Apple", "Mango"];
 fruuits.sort();//sort() method sorts an array alphabetically:
 
 console.log(fruuits)
+
+const points = [40, 100, 1, 5, 25, 10];
+console.log(points.sort(function(a, b){return a - b})); //for sorting in ascending order
+
+const ppoints = [40, 100, 1, 5, 25, 10];
+ppoints.sort(function(a, b){return b - a});//for sorting in descending order
+
+const pointss = [40, 100, 1, 5, 25, 10];
+console.log(pointss.sort(function(){return 0.5 - Math.random()}));
+
+const numbers = [45, 4, 9, 16, 25];
+let txxt = "";
+numbers.forEach(myFunction);//it's basically a js callback function
+
+function myFunction(value, index, array) {
+  txxt += value + "<br>";
+}
+
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+
+function myFunction(value, index, array) {
+  return value * 2;
+}
+const a = ("Arrays Ended")
+console.log(a)
+// JS ARRAYS ENDS HERE
+
+//JS DATES STARTS HERE
+const ab = ("Dates Started")
+console.log(ab)
+
+const d = new Date();
+console.log(d)
+
+const dd = new Date(2018, 11, 24, 10, 33, 30, 0); //here we specified our own date and time 
+console.log(dd)
+
+const ddd = new Date(2018, 11);//two humbers specify year and month
+console.log(ddd)
+
+const dddd = new Date(0);//Using new Date(milliseconds), creates a new date object as January 1, 1970, 00:00:00 Universal Time (UTC) plus the milliseconds:
+console.log(dddd)
+
+const dddddd = new Date();
+dddddd.toString(); //returns a string
+console.log(dddddd)
+
+const d1 = new Date();
+console.log(d1.getTime())
+
+const da = ("JS DATES ENDS HERE")
+console.log(da)
+
+//JS MATH OBJECT STARTS HERE
+const ma = ("MATH OBJECT STARTS HERE")
+console.log(ma)
+
+console.log(Math.round(4.6)); //it will roundoff and return 5
+
+Math.ceil(4.9);
+Math.ceil(4.7);
+Math.ceil(4.4);
+console.log(Math.ceil(4.2)); //here also it will roundoff to 5 only ,
+
+console.log(Math.floor(4.9)); //here it will roundoff to 4
+Math.floor(4.7);
+Math.floor(4.4);
+Math.floor(4.2);
+Math.floor(-4.2);
+
+console.log(Math.sign(-4))//it will return the sign of the number
+
+console.log(Math.pow(8, 2)); //returns the power of x wrt y(here x = 8 and y =2 i.e 8**2)
+
+console.log(Math.abs(-4.7));// returns the absolute(positive) value 
+
+console.log(Math.sqrt(64)); // returns the square root of x
+
+console.log(Math.random()); //returns a random value between 0 and 1
+
+console.log(Math.floor(Math.random() * 10)); // Returns a random integer from 0 to 9:
+
+//js conditionals
+const c = ("JS CONDITRIONALS STARTS HERE")
+console.log(c)
+
+if (new Date().getHours() < 18) {
+  console.log("Good Morning ")
+}
+else{
+  console.log("Good night")
+}
+
+//js switch statements
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
+console.log("Today is "+ day)
+
+switch(fruits) {
+  case "Banana":
+    alert("Hello")
+    break;
+  case "Apple":
+    alert("Welcome")
+    break;
+  
+default:
+
+    //alert("Neither"); 
+}
+
+//JS LOOPS
+const l = ("Loops starts here")
+console.log(l)
+
+for (let i = 0; i < 5; i++) {
+  + "<br>"
+  console.log(text += "The number is " + i );
+}
+
+let i;
+for(i= 0; i < 10; i++) {
+  console.log(i);
+}
+
+const frrruits = ["Apple", "Banana", "Orange"];
+for (g of frrruits) {
+  console.log(g);
+}
+
+//for in loop
+const pserson = {fname:"John ", lname:"Doe ", age:25};
+
+let tcext = "";
+for (let x in pserson) {
+  console.log(tcext += pserson [x]);
+}
+
+//while loop
+let k = 0;
+while (k < 10) {
+  console.log(k);
+  k++
+}
+
+//loop break
+
+for (let z = 0; z < 10; z++) {
+  if (z === 3) { break; } //it will break at 3
+  console.log(z)
+}
+
+//loop continue
+
+for (let n = 0; n < 10; n++) {
+  if (n === 3) { continue; } //it will not print 3 and rest all will be printed
+  console.log(n)
+}
